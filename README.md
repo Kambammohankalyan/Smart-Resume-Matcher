@@ -44,24 +44,36 @@ Smart-Resume-Matcher/
 ```
 
 ### 🚀 Quick Start
-1. Clone the Repository
+**1. Clone the Repository**
 ```bash
-git clone [https://github.com/Kambammohankalyan/Smart-Resume-Matcher.git](https://github.com/Kambammohankalyan/Smart-Resume-Matcher.git)
+git clone https://github.com/Kambammohankalyan/Smart-Resume-Matcher.git
 cd Smart-Resume-Matcher
 ```
-2. Install Dependencies
+**2. Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 **3. Add Data**
   1. Create a folder named resumes (if not exists).
   2. Paste your PDF resumes into the resumes/ folder.
+
+
 **4. Run the Application**
-     1. Open smart_resume_matcher.ipynb in Jupyter/VS Code and run all cells.
-     2. The system will scan the folder.
-     3. It will rank candidates against the Job Description.
-     4. It will save a CSV report and display a visualization.
+  1. Open smart_resume_matcher.ipynb in Jupyter/VS Code and run all cells.
+  2. The system will scan the folder.
+  3. It will rank candidates against the Job Description.
+  4. It will save a CSV report and display a visualization.
+
+
 ### 🔬 How It Works (The Math)
-1. Tokenization: The text is broken down into tokens (words/sub-words).
-2. Vector Embedding: The BERT model transforms these tokens into a dense vector $\mathbf{v} \in \mathbb{R}^{384}$.
-3. Similarity Score: We calculate the Cosine Similarity between the Job Vector ($\mathbf{A}$) and Resume Vector ($\mathbf{B}$):$$ \text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{|\mathbf{A}| |\mathbf{B}|} $$1.0: Perfect Match (Same meaning)0.0: No correlation
+1. **Tokenization:** The text is broken down into tokens (words/sub-words).
+2. **Vector Embedding:** The BERT model transforms these tokens into a dense vector:
+   $\mathbf{v} \in \mathbb{R}^{384}$
+3. **Similarity Score:** We calculate the **Cosine Similarity** between the Job Vector ($\mathbf{A}$) and Resume Vector ($\mathbf{B}$):
+
+$$
+\text{similarity} = \cos(\theta) = \frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\| \|\mathbf{B}\|}
+$$
+
+* **1.0:** Perfect Match (Same meaning)
+* **0.0:** No correlation
