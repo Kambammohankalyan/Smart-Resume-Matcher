@@ -34,7 +34,7 @@
 ### 📂 Project Structure
 ```bash
 Smart-Resume-Matcher/
-├── 📂 resumes/              # Drop your PDF resumes here
+├── 📂 resumes/              # Drop your PDF resumes here or you can upload in app
 ├── 📄 analytics.py          # Module for Plotting & CSV Export
 ├── 📄 pdf_loader.py         # Module for PDF extraction
 ├── 📄 smart_resume_matcher.ipynb  # MAIN NOTEBOOK (Run this)
