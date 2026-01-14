@@ -34,7 +34,7 @@
 ### 📂 Project Structure
 ```bash
 Smart-Resume-Matcher/
-├── 📂 resumes/              # Drop your PDF resumes here
+├── 📂 resumes/              # Drop your PDF resumes here or you can upload in app
 ├── 📄 analytics.py          # Module for Plotting & CSV Export
 ├── 📄 pdf_loader.py         # Module for PDF extraction
 ├── 📄 smart_resume_matcher.ipynb  # MAIN NOTEBOOK (Run this)
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 
 **4. Run the Application**
-  1. Open smart_resume_matcher.ipynb in Jupyter/VS Code and run all cells.
+  1. run streamlit app then upload the resume file.
   2. The system will scan the folder.
   3. It will rank candidates against the Job Description.
   4. It will save a CSV report and display a visualization.
