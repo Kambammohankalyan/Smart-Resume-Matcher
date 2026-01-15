@@ -14,14 +14,11 @@ def plot_results(results):
     """
     Generates a visual bar chart of the candidate rankings.
     """
-    # Convert data to DataFrame for easier plotting
     df = pd.DataFrame(results, columns=["Candidate Name", "Match Score"])
     
-    # Create the plot
     plt.figure(figsize=(10, 6))
     sns.set_theme(style="whitegrid")
     
-    # Create bar chart
     ax = sns.barplot(x="Match Score", y="Candidate Name", data=df, palette="viridis")
     
     # Add labels
