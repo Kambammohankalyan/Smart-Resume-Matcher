@@ -12,10 +12,10 @@
 ---
 
 ### Key Features
-   **PDF Parsing Pipeline:** Automatically extracts text from PDF resumes using a modular loader (`pypdf`).
-   **Semantic Vectorization:** Converts text into high-dimensional vectors (384 dimensions) using the `all-MiniLM-L6-v2` Transformer model.
-   **Cosine Similarity Engine:** Mathematically calculates the angle between the Job Description vector and Resume vectors to determine relevance.
-   **Automated Analytics:** Generates **Bar Charts** for visual comparison and exports rankings to **CSV** for HR teams.
+   1. **PDF Parsing Pipeline:** Automatically extracts text from PDF resumes using a modular loader (`pypdf`).
+   2. **Semantic Vectorization:** Converts text into high-dimensional vectors (384 dimensions) using the `all-MiniLM-L6-v2` Transformer model.
+   3. **Cosine Similarity Engine:** Mathematically calculates the angle between the Job Description vector and Resume vectors to determine relevance.
+   4. **Automated Analytics:** Generates **Bar Charts** for visual comparison and exports rankings to **CSV** for HR teams.
 
 ---
 
