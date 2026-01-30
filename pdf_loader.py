@@ -30,5 +30,5 @@ def load_resumes_from_folder(folder_path):
             text = extract_text_from_pdf(path)
             if text:
                 resumes[filename] = text
-                print(f"✅ Loaded: {filename}")
+                print(f"Loaded: {filename}")
     return resumes
