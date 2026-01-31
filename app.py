@@ -81,4 +81,4 @@ if uploaded_files and job_description:
                 st.bar_chart(df.set_index("Candidate Name"))
 
 elif not job_description:
-    st.info("👈 Please paste a Job Description in the sidebar to start.")
+    st.info("Please paste a Job Description in the sidebar to start.")
