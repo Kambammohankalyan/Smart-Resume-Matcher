@@ -47,7 +47,7 @@ if uploaded_files and job_description:
         with open(os.path.join(save_folder, file.name), "wb") as f:
             f.write(file.getbuffer())
     
-    st.success(f"✅ Uploaded {len(uploaded_files)} resumes.")
+    st.success(f" Uploaded {len(uploaded_files)} resumes.")
     
     # 2. Run the Matcher
     if st.button("Analyze Candidates 🚀"):
@@ -69,13 +69,13 @@ if uploaded_files and job_description:
             col1, col2 = st.columns([1, 1])
             
             with col1:
-                st.subheader("🏆 Rankings")
+                st.subheader("Rankings")
                 # Convert to DataFrame for a nice table
                 df = pd.DataFrame(results, columns=["Candidate Name", "Match Score"])
                 st.dataframe(df.style.highlight_max(axis=0), use_container_width=True)
             
             with col2:
-                st.subheader("📊 Visualization")
+                st.subheader("Visualization")
                 # We need to adapt the plot slightly for Streamlit
                 # (Streamlit handles charts differently than standard Matplotlib)
                 st.bar_chart(df.set_index("Candidate Name"))
